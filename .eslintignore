@@ -1,3 +1,4 @@
 webpack.config.js
 package.json
 .eslintrc.json
+dist/
