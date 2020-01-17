@@ -1,0 +1,36 @@
+@import "./mixins/mixins";
+@import "./vars/vars";
+
+@include font-face($montserrat, $file-path-Montserrat-Bold, $weight-bold, $font-style-normal);
+@include font-face($montserrat, $file-path-Montserrat-Regular, $weight-normal, $font-style-normal);
+@include font-face($quicksand, $file-path-Quicksand-Bold, $weight-bold, $font-style-normal);
+@include font-face($quicksand, $file-path-Quicksand-Regular, $weight-normal, $font-style-normal);
+
+//Переобозначение шрифтов
+$Montserrat: $montserrat, sans-serif;
+$Quicksand: $quicksand, sans-serif;
+
+body {
+  @include font-parameters($Montserrat, $weight-normal, $font-style-normal, $common-size, $common-height) {
+    color: $dark75;
+  }
+}
+
+h1 {
+  @include font-parameters($Quicksand, $weight-bold, $font-style-normal, $h1-size, $h1-height) {
+    color: $dark100;
+  }
+}
+
+h2 {
+  @include font-parameters($Quicksand, $weight-bold, $font-style-normal, $h2-size, $h2-height) {
+    color: $dark100;
+  }
+}
+
+h3 {
+  @include font-parameters($Montserrat, $weight-bold, $font-style-normal, $h3-size, $h3-height) {
+    text-transform: uppercase;
+    color: $dark100;
+  }
+}
