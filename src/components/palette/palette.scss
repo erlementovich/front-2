@@ -1,0 +1,37 @@
+@import './../../scss/vars/vars';
+.palette {
+  display: flex;
+  align-items: center;
+}
+
+.palette__box {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+
+.palette__hex{
+  font-weight: normal;
+}
+
+.box-dark100 {
+  background: $dark100;
+}
+.box-dark75 {
+  background: $dark75;
+}
+.box-dark50 {
+  background: $dark50;
+}
+.box-dark25 {
+  background: $dark25;
+}
+.box-dark5 {
+  background: $dark5;
+}
+.box-purple {
+  background: $purple;
+}
+.box-green {
+  background: $green;
+}
