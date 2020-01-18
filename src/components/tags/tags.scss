@@ -1,0 +1,42 @@
+@import "./../../scss/vars/vars";
+.tags {
+  display: flex;
+  flex-direction: column;
+  margin-right: 191px / $max-width * 100%;
+}
+
+.tags__box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.tags__text {
+  margin-left: 30px;
+}
+.tags__item {
+  color: $dark25;
+}
+
+.tags__item-h1 {
+  font-size: $h1-size;
+  line-height: $h1-height - 1px;
+  margin-left: 8px;
+}
+
+.tags__item-h2 {
+  font-size: $h2-size;
+  line-height: $h2-height - 1px;
+  margin-left: 10px;
+}
+
+.tags__item-h3 {
+  font-size: $h3-size;
+  line-height: $h3-height - 1px;
+  margin-left: 20px;
+}
+
+.tags__item-body {
+  font-size: $common-size;
+  line-height: $common-height - 1px;
+}

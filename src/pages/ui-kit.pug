@@ -6,7 +6,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     title UI KIT
   body.ui-kit
-    .wrapper
+    .ui-kit__wrapper
       .colors-type
         .colors-type__palette
           +palette('dark100','Dark Shade 100%',' #1F2041')
@@ -16,3 +16,5 @@ html(lang="en")
           +palette('dark5','Dark Shade 5%',' #1F2041')
           +palette('purple','Purple',' #BC9CFF')
           +palette('green','Green',' #6FCF97')
+        .colors-type__tags
+          include ../components/tags/tags

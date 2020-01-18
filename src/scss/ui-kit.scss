@@ -1,0 +1,17 @@
+@import "./vars/vars";
+@import "./blocks/colors-type";
+@import "./blocks/cards";
+@import "./blocks/form-elements";
+@import "./blocks/headers-footers";
+
+.ui-kit {
+  background: $main-bg;
+  max-width: $max-width;
+  margin: auto;
+}
+.ui-kit__wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
