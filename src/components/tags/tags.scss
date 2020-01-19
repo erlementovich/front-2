@@ -1,8 +1,11 @@
-@import "./../../scss/vars/vars";
 .tags {
   display: flex;
   flex-direction: column;
-  margin-right: 150px / $max-width * 100%;
+  max-width: 400px;
+  margin-right: 45px;
+  @media only screen and (max-width: $max-width - 1px) {
+    margin-right: 0;
+  }
 }
 
 .tags__box {

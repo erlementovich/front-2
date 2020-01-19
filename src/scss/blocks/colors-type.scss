@@ -2,6 +2,23 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 150px / $max-width * 100%;
+  margin-right: 150px / $max-width * 100%;
+  margin-top: 145px;
+  flex-wrap: wrap;
+  /* Standart laptops ----------- */
+  @media only screen and (max-width: $max-width - 1px) {
+    margin-top: 5%;
+  }
+}
+
+.colors-type__palette {
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: $tablet-min-width) and (max-device-width: $tablet-max-width) {
+    padding-right: 10%;
+  }
+  @media only screen and (max-width: $tablet-max-width) {
+    margin-bottom: 15%;
+  }
 }
