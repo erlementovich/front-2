@@ -3,10 +3,14 @@
     font-family: $font-family;
     font-weight: $weight;
     font-style: $style;
-    src: url("#{$file-path}.eot");
-    src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"), url("#{$file-path}.woff") format("woff"),
-      url("#{$file-path}.ttf") format("truetype"), url("#{$file-path}.svg") format("svg");
-  }
+    src: url("#{$file-path}.eot"); /* IE9 Compat Modes */
+    src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("#{$file-path}.otf") format("opentype"), /* Open Type Font */
+      url("#{$file-path}.svg") format("svg"), /* Legacy iOS */
+      url("#{$file-path}.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("#{$file-path}.woff") format("woff"), /* Modern Browsers */
+      url("#{$file-path}.woff2") format("woff2"); /* Modern Browsers */
+}
 }
 
 @mixin font-parameters($font-family, $font-weight, $font-style, $font-size, $font-height) {

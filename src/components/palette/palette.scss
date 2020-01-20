@@ -1,7 +1,7 @@
-@import './../../scss/vars/vars';
 .palette {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .palette__box {
@@ -9,8 +9,15 @@
   height: 70px;
   border-radius: 6px;
 }
+.palette__information {
+  padding-left: 40px;
+}
 
-.palette__hex{
+.palette__name {
+  margin-bottom: 5px;
+}
+
+.palette__hex {
   font-weight: normal;
 }
 
