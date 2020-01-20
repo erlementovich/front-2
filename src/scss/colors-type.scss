@@ -4,12 +4,12 @@
 @import "./blocks/form-elements";
 @import "./blocks/headers-footers";
 
-.ui-kit {
+.page__colors-type {
   background: $main-bg;
   max-width: $max-width;
   margin: auto;
 }
-.ui-kit__wrapper {
+.colors-type__wrapper {
   position: relative;
   height: 100%;
   display: flex;
