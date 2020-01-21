@@ -1,0 +1,14 @@
+.form__field {
+  font-family: $montserrat;
+  width: $phone-min-width;
+  height: $form-field-height;
+  border: 1px solid $dark25;
+  box-sizing: border-box;
+  border-radius: $border-radius-field;
+  padding-left: $field-padding-x;
+  padding-right: $field-padding-x;
+  padding-top: $field-padding-y;
+  padding-bottom: $field-padding-y;
+  font-size: $common-size;
+  color: $dark75;
+}

@@ -1,2 +1,7 @@
-mixin text-field(extendClass)
-  input(class="form-elements__field text-field" + extendClass)
+mixin text-field(extendClass, placeholder, type, attribute1, attribute2)
+  input(class="form__field text-field" + extendClass,
+  placeholder=placeholder,
+  type=type,
+  attribute1,
+  attribute2
+  )
